@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<block>
+  <name>trunkdecode_bb</name>
+  <key>trunking_trunkdecode_bb</key>
+  <category>trunking</category>
+  <import>import trunking</import>
+  <make>trunking.trunkdecode_bb()</make>
+
+  <!-- Make one 'sink' node per input. Sub-nodes:
+       * name (an identifier for the GUI)
+       * type
+       * vlen
+       * optional (set to 1 for optional inputs) -->
+  <sink>
+    <name>in</name>
+    <type>byte</type>
+  </sink>
+</block>
